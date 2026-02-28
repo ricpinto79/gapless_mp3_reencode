@@ -37,9 +37,47 @@ This tool solves the #1 problem with normal MP3 conversions: **gaps between trac
 
 **System tools** (install with `sudo apt install` on Debian/Ubuntu):
 ```bash
-flac lame mp3splt ffmpeg
+sudo apt update && sudo apt install -y flac lame mp3splt ffmpeg
+```
 
-```markdown
 **Python packages** (install with pip):
+```bash
+pip install tqdm mutagen
+```
 
+**How to use:** 
+```bash
+./run_gapless.sh
+```
+
+**Or directly:**
+```bash
+python3 gapless_mp3_reencode.py /path/to/lossless/folder
+```
+
+The script will:
+
+Scan for lossless albums
+Ask for encoding quality (recommended: Default + V0)
+Run in dry-run first (highly recommended)
+Create perfect gapless MP3s in ./MP3/
+Write detailed reports
+
+Example output folder
+textMP3/
+└── Slayer - [1984] Show No Mercy (RR 34 9868)/
+    ├── 01 - Evil Has No Boundaries.mp3
+    ├── 02 - Antichrist.mp3
+    ...
+Reports created
+
+mp3_reencode_report.json (machine readable)
+mp3_reencode_report.txt (human readable)
+mp3_reencode_report_folders.txt (OK vs BLOCKED list)
+
+Why this beats every other tool
+Most tools either:
+
+Encode track-by-track (introduces gaps), or
+Don't preserve LAME delay/padding correctly.
 
