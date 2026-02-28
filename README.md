@@ -40,6 +40,6 @@ This tool solves the #1 problem with normal MP3 conversions: **gaps between trac
 flac lame mp3splt ffmpeg
 
 ```markdown
-**Python stuff**
+**Python packages** (install with pip):
 
 
