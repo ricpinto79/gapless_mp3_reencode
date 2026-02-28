@@ -33,9 +33,13 @@ This tool solves the #1 problem with normal MP3 conversions: **gaps between trac
 
 ### Requirements
 
+
+
 **System tools** (install with `sudo apt install` on Debian/Ubuntu):
 ```bash
 flac lame mp3splt ffmpeg
 
-Python packages:
-pip install tqdm mutagen
+```markdown
+**Python stuff**
+
+
