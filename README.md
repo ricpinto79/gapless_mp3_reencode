@@ -1,6 +1,19 @@
-# Bulk Gapless MP3 Re-encode tool and MusicBrainz Tagger + Cover Art Embedder
+# Gapless MP3 Re-encode tool and MusicBrainz Tagger + Cover Art Embedder  
+**Lossless → Perfect Gapless MP3s + MusicBrainz Tags & Covers**
 
-**Convert your lossless albums (FLAC, APE, ALAC/M4A) into perfect gapless MP3s** using album-wide LAME encoding + CUE splitting.
+Two powerful tools that work **perfectly together** in one repo.
+
+### 🚀 Recommended Workflow (2-step pipeline)
+
+1. **`./run_gapless.sh`** → Convert lossless albums (FLAC/APE/ALAC) to **true gapless** MP3s  
+   (album-wide LAME + CUE splitting + catalog number detection)
+
+2. **`./run_mb_tag_apply.sh ./MP3`** → Interactive MusicBrainz tagging + cover art embedding  
+   (on the MP3 folders created in step 1)
+
+---
+
+### Tool 1: Bulk Gapless MP3 Re-encode
 
 This tool solves the #1 problem with normal MP3 conversions: **gaps between tracks** (especially on live albums, classical, or continuous mixes). It encodes the **entire album as one big MP3** first (so LAME can apply proper delay/padding), then splits it perfectly using the CUE sheet.
 
@@ -84,6 +97,34 @@ Most tools either:
 Encode track-by-track (introduces gaps), or
 Don't preserve LAME delay/padding correctly.
 
+---
+
+### Tool 2: MusicBrainz Tagger + Cover Art Embedder
+Interactive tagger for existing MP3 album folders.
+
+- Searches MusicBrainz (prefers catalog number)
+- Lets you pick the correct release
+- Embeds cover art (or lets you choose a cleaner variant)
+- Tags IN PLACE — no moving, renaming, or copying
+- Per-album JSON + TXT reports
+
+How to run:
+```bash
+./run_mb_tag_apply.sh
+# or point directly to your MP3 folder:
+./run_mb_tag_apply.sh ./MP3
+```
+
+Requirements (one-time only):
+```bash
+sudo apt update && sudo apt install -y flac lame mp3splt ffmpeg
+```
+
+Full Pipeline Example:
+```bash
+./run_gapless.sh          # → creates ./MP3/Artist - [year] Album (CATNO)/
+./run_mb_tag_apply.sh ./MP3   # → adds perfect tags + covers
+```
 
 ## License
 
@@ -101,5 +142,5 @@ No obligation, no strings attached EVER! ❤️
 
 
 
-# Developed with assistance from Grok (xAI) — https://x.ai
+Developed with assistance from Grok (xAI) — https://x.ai
 
