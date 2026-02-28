@@ -84,11 +84,22 @@ Most tools either:
 Encode track-by-track (introduces gaps), or
 Don't preserve LAME delay/padding correctly.
 
-## 💙 Support the Project
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file.
+
+You are free to use, modify, and share the script **as long as you credit the original author** and link back to this repository.
+
+## ☕ Support / Donations
 
 If this tool saved you time or made your music collection better, consider buying me a coffee ☕!
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ricpintov)
 
-(Just a one-time coffee — no pressure, ever ❤️)
+No obligation, no strings attached EVER! ❤️
+
+
+
+# Developed with assistance from Grok (xAI) — https://x.ai
 
