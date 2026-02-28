@@ -11,6 +11,11 @@ Two powerful tools that work **perfectly together** in one repo.
 2. **`./run_mb_tag_apply.sh ./MP3`** → Interactive MusicBrainz tagging + cover art embedding  
    (on the MP3 folders created in step 1)
 
+## The Story Behind the Tools
+
+Curious why these scripts even exist?  
+[Read the full (slightly ridiculous) origin story here](STORY.md) 😄
+
 ---
 
 ### Tool 1: Bulk Gapless MP3 Re-encode
