@@ -1,4 +1,4 @@
-# Gapless MP3 Re-encode
+# Bulk Gapless MP3 Re-encode tool and MusicBrainz Tagger + Cover Art Embedder
 
 **Convert your lossless albums (FLAC, APE, ALAC/M4A) into perfect gapless MP3s** using album-wide LAME encoding + CUE splitting.
 
