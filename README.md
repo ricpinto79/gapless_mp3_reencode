@@ -64,16 +64,19 @@ Create perfect gapless MP3s in ./MP3/
 Write detailed reports
 
 Example output folder
+```bash
 textMP3/
 └── Slayer - [1984] Show No Mercy (RR 34 9868)/
     ├── 01 - Evil Has No Boundaries.mp3
     ├── 02 - Antichrist.mp3
     ...
-Reports created
+
+Reports created:
 
 mp3_reencode_report.json (machine readable)
 mp3_reencode_report.txt (human readable)
 mp3_reencode_report_folders.txt (OK vs BLOCKED list)
+````
 
 Why this beats every other tool
 Most tools either:
