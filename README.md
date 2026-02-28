@@ -84,3 +84,11 @@ Most tools either:
 Encode track-by-track (introduces gaps), or
 Don't preserve LAME delay/padding correctly.
 
+## 💙 Support the Project
+
+If this tool saved you time or made your music collection better, consider buying me a coffee ☕!
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/ricpintov)
+
+(Just a one-time coffee — no pressure, ever ❤️)
+
