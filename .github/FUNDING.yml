@@ -1,0 +1,6 @@
+# GitHub automatically shows a "Sponsor" button with these links
+
+github: # leave empty or put your username if you enable GitHub Sponsors later
+buy_me_a_coffee: ricpintov   # ← CHANGE THIS to your actual BuyMeACoffee username
+custom: ["https://buymeacoffee.com/ricpintov"]  # extra safety
+
