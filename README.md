@@ -28,7 +28,7 @@ This tool solves the #1 problem with normal MP3 conversions: **gaps between trac
   - **Option A** (single lossless + CUE): decode → album LAME → split
   - **Option B** (multiple files): concat to WAV → album LAME → auto-generate CUE → split
 
-- **New in this version**:
+- **Current version**:
   - Automatic **catalog number** detection (CUE → tags → folder name)
   - Beautiful output folder naming: `Artist - [year] Album (CATNO)`
   - Robust error handling (corrupted files no longer crash the script)
@@ -43,6 +43,11 @@ This tool solves the #1 problem with normal MP3 conversions: **gaps between trac
   - Auto-renames tracks using CUE titles with proper padding
   - Prompts to delete temp folders at the end
   - Works with multi-disc albums automatically
+ 
+- **Future implementation**:
+  - Multicore so that several albums can be converted at the same time - parallel.
+  - Fix multidisc limitation - currently each album *cue and *flac (or equivalent) must reside under their own sub-folder.
+  - Everything integrated into a nice GUI?!...
 
 ### Requirements
 
